@@ -1,7 +1,5 @@
 require 'spec_helper'
 
-wait = Selenium::WebDriver::Wait.new(:timeout => 10) # seconds
-
 describe "トップページ" do
   context "表示時" do
     it "うごく" do
