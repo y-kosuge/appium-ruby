@@ -1,6 +1,7 @@
 require "rubygems"
 require "appium_lib"
 
+# iOS
 def desired_caps
   {
     caps: {
@@ -17,6 +18,26 @@ def desired_caps
     }
   }
 end
+
+=begin
+# Android
+def desired_caps
+  {
+    caps: {
+      platformName:  "Android",
+      versionNumber: "4.1",
+      deviceName:    "Android Emulator",
+      avd: 'Nexus_5_API_21_x86',
+      app: 'platforms/android/build/outputs/apk/android-debug.apk',
+      :"app-activity" => '.MainActivity',
+      autoWebview: true
+    },
+    appium_lib: {
+      wait: 10
+    }
+  }
+end
+=end
 
 RSpec.configure { |c|
   c.before(:each) {
