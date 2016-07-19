@@ -14,3 +14,9 @@ bundle install
 rspec spec/test_spec.rb
 ```
 
+# ドキュメント
+
+ここからがんばって探す
+
+http://www.rubydoc.info/gems/selenium-webdriver/Selenium
+
