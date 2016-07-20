@@ -11,7 +11,8 @@ def desired_caps
       platformVersion: '9.2',
       deviceName: 'iPhone 5s',
       app: 'platforms/ios/build/emulator/HelloCordova.app',
-      autoWebview: true
+      autoWebview: true,
+      autoWebViewTimeout: 10000
     },
     appium_lib: {
       wait: 10
@@ -30,7 +31,8 @@ def desired_caps
       avd: 'Nexus_5_API_21_x86',
       app: 'platforms/android/build/outputs/apk/android-debug.apk',
       :"app-activity" => '.MainActivity',
-      autoWebview: true
+      autoWebview: true,
+      autoWebViewTimeout: 10000
     },
     appium_lib: {
       wait: 10
